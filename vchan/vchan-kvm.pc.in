@@ -1,0 +1,11 @@
+prefix=@PREFIX@
+exec_prefix=${prefix}
+includedir=@INCLUDEDIR@
+libdir=@LIBDIR@
+
+Name: vchan-kvm
+Requires.private: kvmchan
+Description: The vchan communication library (KVM)
+Version: @VERSION@
+Cflags: -I${includedir}
+Libs: -L${libdir} -lvchan-kvm
